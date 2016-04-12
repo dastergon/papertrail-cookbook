@@ -33,6 +33,7 @@ end
 remote_file node['papertrail']['cert_file'] do
   source node['papertrail']['cert_url']
   mode "0444"
+  checksum "c75ce425e553e416bde4e412439e3d09"
 end
 
 syslogdir = "/etc/rsyslog.d"
